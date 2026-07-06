@@ -27,11 +27,3 @@ module "subnets" {
   environment           = var.environment
 }
 
-module "ec2" {
-  source      = "../../../../modules/compute/ec2"
-  vpc_id      = module.vpc.vpc_id
-  environment = var.environment
-  instances   = var.instances
-  subnet_id   = module.subnets.public_subnet_ids
-}
-
