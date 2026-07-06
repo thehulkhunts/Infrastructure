@@ -1,0 +1,86 @@
+```gitignore
+# ==========================================================
+# Terraform
+# ==========================================================
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform plan files
+*.tfplan
+*.plan
+
+# Terraform variable files (often contain secrets)
+#*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# Dependency lock file
+# Uncomment the next line if you do NOT want to version the lock file.
+# In most production environments, KEEP this file committed.
+.terraform.lock.hcl
+
+# ==========================================================
+# Environment files
+# ==========================================================
+
+.env
+.env.*
+!.env.example
+
+# ==========================================================
+# Logs
+# ==========================================================
+
+*.log
+
+# ==========================================================
+# IDEs
+# ==========================================================
+
+.vscode/
+.idea/
+*.iml
+
+# ==========================================================
+# OS files
+# ==========================================================
+
+.DS_Store
+Thumbs.db
+
+# ==========================================================
+# Temporary files
+# ==========================================================
+
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ==========================================================
+# Terraform test artifacts
+# ==========================================================
+
+.terraform.tfstate.lock.info
+
+# Local CLI configuration
+terraform.tfstate.backup
+```
