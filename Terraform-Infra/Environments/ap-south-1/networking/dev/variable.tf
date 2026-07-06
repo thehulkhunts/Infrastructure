@@ -20,14 +20,6 @@ variable "public_subnets_cidrs" {
   type        = list(string)
   description = "inject multiple public cidr's"
 }
-variable "instances" {
-  type = map(object({
-    instance_type = list(string)
-    volume_size   = string
-    volume_type   = string
-    key_name      = string
-  }))
-}
 
 
 
